@@ -34,7 +34,7 @@ void create_test_stats()
 	test_stats->xp = 180;
 }
 
-*list_t create_test_inventory()
+void create_test_inventory()
 {
 	list_t *inv_list = malloc(sizeof(list_t));
 	
