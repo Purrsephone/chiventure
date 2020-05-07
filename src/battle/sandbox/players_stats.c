@@ -1,28 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "structs.h"
 
-struct stats_t
-{
-	int speed;
-	int strength;
-	int dexterity;
-	int hp;
-	int xp;
-} stats_t;
-
-typedef struct list_t {
-    int val;
-    struct list_t * next;
-} list_t;
-
-enum class{bard, cleric, paladin, wizard};
-
-struct player_t 
-{
-	enum class cl;
-	list_t inventory;
-	list_t armor;
-} player_t;
 
 void create_test_stats()
 {
@@ -36,7 +15,7 @@ void create_test_stats()
 
 void create_test_inventory()
 {
-	list_t *inv_list = malloc(sizeof(list_t));
+	ilist_t *inv_list = malloc(sizeof(ilist_t));
 	
 }
 
